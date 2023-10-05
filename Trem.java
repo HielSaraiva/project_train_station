@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.Date;
 
 class Trem {
-    private ArrayList<Vagao> vagoes = new ArrayList<>();
-    private ArrayList<Locomotiva> locomotivas = new ArrayList<>();
+    private ArrayList<Vagao> vagoes = new ArrayList<Vagao>();
+    private ArrayList<Locomotiva> locomotivas = new ArrayList<Locomotiva>();
     private String prefixo;
     private Date dataForm;
     private EstacaoFerroviaria estacaoOrigem;
