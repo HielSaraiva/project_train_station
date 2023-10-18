@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,8 +39,9 @@ public class Main {
         EstacaoFerroviaria estacao2 = new EstacaoFerroviaria(linhas2, "LAION", "Come ovo");
         
         // Instanciando o Trem e adicionando ao ArrayList
-        Date dataForm = new Date(20/11/2000);
-        Trem trem1 = new Trem(vagao2, locomotiva2, estacao1, estacao2, "É O LAION", dataForm);
+        String dataForm = "20/11/2000";
+    
+        Trem trem1 = new Trem(vagao2, locomotiva2, estacao1, estacao2, "E O LAION", dataForm);
         ArrayList<Trem> trens = new ArrayList<Trem>();
         trens.add(trem1);
         

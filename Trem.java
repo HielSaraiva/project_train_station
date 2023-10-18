@@ -1,15 +1,15 @@
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Calendar;
 
 class Trem {
     private ArrayList<Vagao> vagoes = new ArrayList<Vagao>();
     private ArrayList<Locomotiva> locomotivas = new ArrayList<Locomotiva>();
     private String prefixo;
-    private Date dataForm;
+    private String dataForm;
     private EstacaoFerroviaria estacaoOrigem;
     private EstacaoFerroviaria estacaoDestino;
 
-    public Trem(Vagao vagaoPrincipal, Locomotiva locomotivaPrincipal, EstacaoFerroviaria estacaoOrigem, EstacaoFerroviaria estacaoDestino, String prefixo, Date dataForm) {
+    public Trem(Vagao vagaoPrincipal, Locomotiva locomotivaPrincipal, EstacaoFerroviaria estacaoOrigem, EstacaoFerroviaria estacaoDestino, String prefixo, String dataForm) {
         this.locomotivas.add(locomotivaPrincipal);
         this.vagoes.add(vagaoPrincipal);
 
@@ -17,20 +17,6 @@ class Trem {
         this.dataForm = dataForm;
         this.estacaoOrigem = estacaoOrigem;
         this.estacaoDestino = estacaoDestino;       
-    }
-
-    public Vagao getVagoes() {
-        for(Vagao vagao : vagoes) {
-            return vagao;
-        }
-        return null;
-    }
-
-    public Locomotiva getLocomotivas() {
-        for(Locomotiva locomotiva : locomotivas) {
-            return locomotiva;
-        }
-        return null;
     }
 
     public String getPrefixo() {
@@ -41,11 +27,11 @@ class Trem {
         this.prefixo = prefixo;
     }
 
-    public Date getDataForm() {
+    public String getDataForm() {
         return dataForm;
     }
 
-    public void setDataForm(Date dataForm) {
+    public void setDataForm(String dataForm) {
         this.dataForm = dataForm;
     }
 
@@ -66,22 +52,27 @@ class Trem {
     }
 
     public String toString() {
+        String str = "";
         for(Vagao vagao : vagoes) {
-            return "tipo do vagao: " + vagao.getTipo()
+            str += "Tipo do vagao: " + vagao.getTipo()
                     + "\nNumero de serie do vagao: " + vagao.getNumSerie()
                     + "\nCapacidade de carga: " + vagao.getCapacidadeCarga()
                     + "\nComprimento de testeiras: " + vagao.getCompTesteiras()
                     + "\nComprimento de engates: " + vagao.getCompEngates();
         }
+
         for(Locomotiva locomotiva : locomotivas) {
-            return "Numero de serie: " + locomotiva.getNumSerie()
+            str += "\nNumero de serie: " + locomotiva.getNumSerie()
                     + "\nCapacidade de tracao: " + locomotiva.getCapTracao()
                     + "\nComprimento da locomotiva: " + locomotiva.getCompLocom();
         }
-            return "\nprefixo: " + prefixo
-            + "\ndataForm: " + dataForm
-            + "\nestacaoOrigem: " + estacaoOrigem
-            + "\nestacaoDestino: " + estacaoDestino; 
+
+        str += "\nprefixo: " + this.prefixo
+            + "\ndataForm: " + this.dataForm;
+            // + "\nestacaoOrigem: " + this.estacaoOrigem
+            // + "\nestacaoDestino: " + this.estacaoDestino; 
+
+        return str;
     }
 
     public String addVagao(Vagao vagao) {
