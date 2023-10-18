@@ -68,9 +68,9 @@ class Trem {
         }
 
         str += "\nprefixo: " + this.prefixo
-            + "\ndataForm: " + this.dataForm;
-            // + "\nestacaoOrigem: " + this.estacaoOrigem
-            // + "\nestacaoDestino: " + this.estacaoDestino; 
+            + "\ndataForm: " + this.dataForm
+            + "\nestacaoOrigem: " + this.estacaoOrigem
+            + "\nestacaoDestino: " + this.estacaoDestino; 
 
         return str;
     }

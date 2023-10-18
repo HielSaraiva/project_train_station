@@ -40,8 +40,10 @@ public class EstacaoFerroviaria {
     }
 
     public String toString() {
-        return "sigla: " + this.sigla
-            + "\ndescricao: " + this.descricao
-            + "\nlinhas: " + this.linhas;
+        String str = "";
+        str += "\nsigla: " + this.sigla;
+        str += "\ndescricao: " + this.descricao;
+    
+        return str;
     }
 }

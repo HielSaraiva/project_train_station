@@ -48,9 +48,12 @@ class LinhaFerroviaria {
     }
 
     public String toString() {
-        return "numero: " + this.numero
-            + "\nextensao: " + this.extensao
-            + "\ndescricao: " + this.descricao
-            + "\ntrens: " + this.trens;
+        String str = "";
+        str += "\nnumero: " + this.numero;
+        str += "\nextensao: " + this.extensao;
+        str += "\ndescricao: " + this.descricao;
+        str += "\ntrens: " + this.trens;
+
+        return str;
     }
 }
