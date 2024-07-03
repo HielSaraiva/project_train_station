@@ -1,3 +1,5 @@
+package src.main;
+
 public class Vagao {
     private String numSerie;
     private String tipo;

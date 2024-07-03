@@ -1,5 +1,6 @@
+package src.main;
+
 import java.util.ArrayList;
-import java.util.Calendar;
 
 class Trem {
     private ArrayList<Vagao> vagoes = new ArrayList<Vagao>();
@@ -87,7 +88,7 @@ class Trem {
     public String addLocomotiva(Locomotiva locomotivas) {
         if(this.vagoes.size() + this.locomotivas.size() <= 150) {
             this.locomotivas.add(locomotivas);
-            return "Locomotiva adicionada, total de locomotivas: " + this.locomotivas.size() + "\n";
+            return "src.main.Locomotiva adicionada, total de locomotivas: " + this.locomotivas.size() + "\n";
         } else {
             return "Limite de 150 recursos atingido!\n";
         }

@@ -1,3 +1,5 @@
+package src.main;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -38,14 +40,14 @@ public class Main {
         EstacaoFerroviaria estacao1 = new EstacaoFerroviaria(linhas1, "FEC", "Peia no KANAL");
         EstacaoFerroviaria estacao2 = new EstacaoFerroviaria(linhas2, "LAION", "Come ovo");
         
-        // Instanciando o Trem e adicionando ao ArrayList
+        // Instanciando o src.main.Trem e adicionando ao ArrayList
         String dataForm = "20/11/2000";
     
         Trem trem1 = new Trem(vagao2, locomotiva2, estacao1, estacao2, "E O LAION", dataForm);
         ArrayList<Trem> trens = new ArrayList<Trem>();
         trens.add(trem1);
         
-        // Adicionando o mesmo Trem às duas LinhaFerroviaria's
+        // Adicionando o mesmo src.main.Trem às duas src.main.LinhaFerroviaria's
         linhas1.get(0).setTrens(trens);
         linhas2.get(0).setTrens(trens);
 

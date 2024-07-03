@@ -1,7 +1,22 @@
-# Projeto Estacao de Trem
-Trabalho de POO sobre modelagem de uma estação ferroviária.
+# Train Station Project
 
-Professor: Lucas Silva de Sousa.
+## Main Purpose
 
-Alunos: Hiel Saraiva Freitas de Queiroga e
-Conrado Einstein Malessa de Oliveira.
+- Implement knowledge about modeling using UML.
+
+## Project Overview (PT/BR)
+
+- OOP work on modelling a train station.
+
+### Unified Modeling Language (UML)
+
+<img src="uml.png" alt="uml" width="650">
+
+## Team 
+
+- Hiel Saraiva Freitas de Queiroga.
+- Conrado Einstein Malessa de Oliveira.
+
+## Versions:
+
+- Java 21
